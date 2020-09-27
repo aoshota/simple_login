@@ -1,0 +1,15 @@
+<h1>ユーザー一覧</h1>
+
+<%= link_to '登録画面へ', '/users/new' %>
+
+<table>
+	<tr>
+		<th>ユーザー名</th>
+	</tr>
+
+	<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+		</tr>
+	<% end %>
+</table>

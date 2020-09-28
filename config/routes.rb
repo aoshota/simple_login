@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'users/index'
   get 'users/new'
   get 'users/home'
+	get '/users/create', to: 'users#new'
 	post 'users/create'
 
 	root 'users#index'
